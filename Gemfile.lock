@@ -120,7 +120,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  builder (~> 3.2)
+  builder (~> 3.2.4)
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   middleman-blog (~> 4.0)
@@ -130,4 +130,4 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 BUNDLED WITH
-   2.1.0
+   2.1.4

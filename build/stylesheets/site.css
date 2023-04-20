@@ -1,0 +1,153 @@
+/*FONTS*/
+/*COLORS*/
+/*OTHER*/
+/*GENERAL*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+body {
+  background: black;
+  background: linear-gradient(190deg, black 60%, #00063c 75%, #e76b68 100%);
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none; }
+
+p {
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: 1.4em;
+  font-family: "courier-prime", courier, monospace; }
+
+h1 {
+  font-family: "courier-prime", courier, monospace;
+  font-size: 46px;
+  font-weight: 300; }
+
+h2 {
+  font-family: "courier-prime", courier, monospace;
+  font-size: 24px;
+  font-weight: 300; }
+
+h3 {
+  font-family: "courier-prime", courier, monospace;
+  font-size: 24px; }
+
+a {
+  font-family: "courier-prime", courier, monospace;
+  text-decoration: underline;
+  color: black;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s; }
+  a:focus, a:hover {
+    color: #a35144; }
+
+strong {
+  font-weight: 600; }
+
+.italic {
+  font-style: italic; }
+
+.color1 {
+  color: #a35144; }
+
+/*DIVs for Content*/
+.fullphoto {
+  height: 100vh;
+  position: relative;
+  background: url(/images/SaFranWeb_main.jpg);
+  background-size: cover; }
+  .fullphoto .titel {
+    float: right;
+    padding: 3em 2em 0 0; }
+  .fullphoto h1, .fullphoto h2, .fullphoto h3, .fullphoto p {
+    color: #fff; }
+
+.content {
+  margin: auto;
+  max-width: 900px; }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  margin: 3vw;
+  padding: 1vw; }
+  .grid h1, .grid h2 {
+    margin-top: 15px;
+    color: #fff; }
+  .grid .text {
+    background-color: white;
+    padding: 20px 40px 0 40px; }
+
+.fade-in-top {
+  -webkit-animation: fade-in-top 1s ease-in-out 1s forwards;
+  animation: fade-in-top 1s ease-in-out 1s forwards; }
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 2s ease-in-out 1s forwards;
+  animation: fade-in-bottom 2s ease-in-out 1s forwards; }
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@media (max-width: 900px) {
+  .fullphoto {
+    position: relative; }
+    .fullphoto h1 {
+      font-size: 40px;
+      line-height: 1em; }
+    .fullphoto .titel {
+      position: absolute;
+      bottom: 1em;
+      left: 3vw; }
+  .grid {
+    margin: 40px 3vw;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+    .grid h2 {
+      margin: 40px 0 10px 0; }
+    .grid .text {
+      padding: 20px 3vw 0 3vw; } }
