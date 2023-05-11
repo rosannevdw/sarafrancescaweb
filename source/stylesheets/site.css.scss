@@ -13,12 +13,12 @@ body {
   background: rgb(0,0,0);
   background: linear-gradient(190deg, rgba(0,0,0,1) 60%, rgba(0,6,60,1) 75%, rgba(231,107,104,1) 100%);
   hyphens: none;
+  font-family: $fontprim;
 }
 p {
   font-size: 15px;
   line-height: 1.5em;
   margin-bottom: 1.4em;
-  font-family: $fontprim;
 }
 h1 {
   font-family: $fontprim;
@@ -52,6 +52,12 @@ strong {
 }
 .color1 {
   color: rgba($pinkred, 1);
+}
+ul {
+  list-style-type: circle;
+  li {
+    margin-left: 15px;
+  }
 }
 
 /*DIVs for Content*/
