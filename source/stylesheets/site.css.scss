@@ -54,10 +54,8 @@ strong {
   color: rgba($pinkred, 1);
 }
 ul {
-  list-style-type: circle;
-  li {
-    margin-left: 15px;
-  }
+  list-style-type: "» ";
+  margin-left: 20px;
 }
 
 /*DIVs for Content*/
