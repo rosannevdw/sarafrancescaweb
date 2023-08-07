@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "source/images/uploads"
+public_folder: "/images/uploads"
+site_url: https://sarafrancesca.ch
+display_url: https://sarafrancesca.ch
+locale: 'de'
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+collections:
+  - name: "theater"
+    label: "Theaterstücke"
+    format: yml
+    extension: yml
+    folder: "data/theater"
+    create: true
+    slug: "{{year}}-{{slug}}.yml"
+    editor:
+      preview: false
+    fields:
+      - {label: "Titel", name: "titel", widget: "string"}
+      - {label: "Untertitel", name: "untertitel", widget: "string"}
+      - {label: "Beschreibung", name: "beschreibung", widget: "markdown"}
+      - {label: "Bild", name: "bild", widget: "image", required: false}
+      - {label: "Flyer", name: "flyer", widget: "string", required: false}
+      - label: "Spieldaten"
+        name: "spieldaten"
+        widget: "list"
+        identifier_field: "datum"
+        fields:
+          - {label: "Datum", name: "datum", widget: "string"}
+          - {label: "Ort", name: "ort", widget: "string"}
+          - {label: "Zeit", name: "zeit", widget: "string", required: false}
+          - {label: "Weitere Infos", name: "weiteres", widget: "string", required: false}
+          - {label: "Ticketlink", name: "ticketlink", widget: "string", required: false}
